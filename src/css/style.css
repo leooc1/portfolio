@@ -37,14 +37,50 @@ body {
     top: -2px;
     right: -2px;
     border-radius: 10px;
-    background-color: #ffffff36;
-    backdrop-filter: blur(10px);
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.esc-home{
+    display: flex;
+    font-size: 0;
+    font-family: var(--fonte-normal);
+    background-color: #ffff;
+    margin: 10px;
+    padding: 0;
+    width: 0;
+    border-radius: 10px;
+}
+
+.esc-proj{
+    display: flex;
+    font-size: 0;
+    font-family: var(--fonte-normal);
+    background-color: #ffff;
+    margin: 10px;
+    padding: 0;
+    width: 0;
+    border-radius: 10px;
+}
+
+.esc-home:hover,.esc-proj:hover{
+    background-color: rgb(194, 243, 255);
+    cursor: pointer;
+}
+
+.logo-projetos,.logo-home{
+    padding-right: 20px;
 }
 
 .menu-sanduiche{
     position: absolute;
     top: 10px;
     right: 10px;
+    cursor: pointer;
 }
 
 .perfil {
@@ -96,6 +132,7 @@ body {
 .sobre:hover,
 .social:hover {
     background-color: var(--dark-gray);
+    transition: .4s;
 }
 
 .sobre-mim {
@@ -150,6 +187,11 @@ span{
     margin: 10px;
 }
 
+.linkedin:hover{
+    transition: .4s;
+    background-color: rgb(0, 51, 145);
+}
+
 .github{
     display: flex;
     justify-content: space-around;
@@ -157,12 +199,17 @@ span{
     width: 190px;
     font-family: var(--fonte-normal);
     padding: 10px;
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(29, 29, 29);
     border-bottom: 3px solid rgb(255, 255, 255);
     border-radius: 10px;
     color: #ffff;
     font-size: 18pt;
     margin: 10px;
+}
+
+.github:hover{
+    transition: .4s;
+    background-color: rgb(0, 0, 0);
 }
 
 .email{
@@ -178,6 +225,11 @@ span{
     color: #ffff;
     font-size: 18pt;
     margin: 10px;
+}
+
+.email:hover{
+    transition: .4s;
+    background-color: rgb(155, 14, 14);    
 }
 
 ::-webkit-scrollbar {
