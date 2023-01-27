@@ -4,20 +4,19 @@ function menu(sanduiche){
         sanduiche.style.transform = 'rotate(0deg)'
         menu.style.width = '0px'
         menu.style.height = '0px'
-        sanduiche.src = '../src/image/menu-line.svg'
 
         document.querySelector('.esc-home').style.fontSize = '0'
-        document.querySelector('.esc-home').style.width = '0'
-        document.querySelector('.esc-home').style.padding = '0'
         setTimeout(()=>{
+            document.querySelector('.esc-home').style.width = '0'
+            document.querySelector('.esc-home').style.padding = '0'
             document.querySelector('.logo-home').src = ''
         },100) 
         document.querySelector('.esc-home').style.transition = '.3s'
 
         document.querySelector('.esc-proj').style.fontSize = '0'
-        document.querySelector('.esc-proj').style.width = '0'
-        document.querySelector('.esc-proj').style.padding = '0'
         setTimeout(()=>{
+            document.querySelector('.esc-proj').style.width = '0'
+            document.querySelector('.esc-proj').style.padding = '0'
             document.querySelector('.logo-projetos').src = ''
         },100) 
         document.querySelector('.esc-proj').style.transition = '.3s'
@@ -29,20 +28,19 @@ function menu(sanduiche){
         sanduiche.style.transform = 'rotate(-90deg)'
         menu.style.width = '520px'
         menu.style.height = '580px'
-        sanduiche.src = '../src/image/close-line.svg'
         
         document.querySelector('.esc-home').style.fontSize = '18pt'
-        document.querySelector('.esc-home').style.width = '190px'
-        document.querySelector('.esc-home').style.padding = '10px'
         setTimeout(()=>{
+            document.querySelector('.esc-home').style.padding = '10px'
+            document.querySelector('.esc-home').style.width = '190px'
             document.querySelector('.logo-home').src = '../src/image/home-2-line.svg'
         },100)
         document.querySelector('.esc-home').style.transition = 'width 1s, font-size 1s, background-color .3s'
 
         document.querySelector('.esc-proj').style.fontSize = '18pt'
-        document.querySelector('.esc-proj').style.width = '190px'
-        document.querySelector('.esc-proj').style.padding = '10px'
         setTimeout(()=>{
+            document.querySelector('.esc-proj').style.width = '190px'
+            document.querySelector('.esc-proj').style.padding = '10px'
             document.querySelector('.logo-projetos').src = '../src/image/folder-user-line.svg'
         },100)
         document.querySelector('.esc-proj').style.transition = 'width 1s, font-size 1s, background-color .3s'
@@ -72,6 +70,14 @@ function tradeButton(button){
         document.querySelector('.svg-redes').src = '../src/image/message-2-fill.svg'
         document.querySelector('.svg-sobre').src = '../src/image/user-3-line.svg'
     }
+}
 
+function home(){
+    document.querySelector('.projetos').style.display = 'none'
+    document.querySelector('.menu-sanduiche').src = '../src/image/menu-line (1).svg'
+}
 
+function projetos(){
+    document.querySelector('.projetos').style.display = 'block'
+    document.querySelector('.menu-sanduiche').src = '../src/image/menu-line.svg'
 }

@@ -6,6 +6,7 @@
 
     --dark-gray: rgb(51, 47, 46);
     --black: rgb(10, 10, 10);
+    --dark-blue: #090637;
     --details: cyan;
 }
 
@@ -21,13 +22,24 @@ body {
 }
 
 .cartao {
-    background-image: linear-gradient(var(--details), var(--details), var(--details), var(--details), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray));
+    background-image: linear-gradient(var(--dark-blue), var(--dark-blue), var(--dark-blue), var(--dark-blue), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray));
     width: 520px;
     margin-top: 20px;
     height: 580px;
     border-radius: 10px;
     border: 2px solid var(--black);
     position: relative;
+}
+
+.projetos{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 520px;
+    height: 580px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: none;
 }
 
 .menu-escondido{
@@ -99,6 +111,8 @@ body {
 .name {
     font-family: var(--fonte-pixel);
     text-align: center;
+    font-weight: 600;
+    color: #e7e7e7;
 }
 
 .cargo {
@@ -106,6 +120,7 @@ body {
     text-align: center;
     font-size: 1.4rem;
     font-weight: 600;
+    color: #e7e7e7;
 }
 
 .botoes {
