@@ -79,5 +79,5 @@ function home(){
 
 function projetos(){
     document.querySelector('.projetos').style.display = 'block'
-    document.querySelector('.menu-sanduiche').src = '../src/image/menu-line.svg'
+    // document.querySelector('.menu-sanduiche').src = '../src/image/menu-line.svg'
 }

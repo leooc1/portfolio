@@ -38,8 +38,35 @@ body {
     width: 520px;
     height: 580px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: rgb(133, 133, 133);
+    padding: 20px 40px;
     display: none;
+    overflow-y: scroll;
+}
+
+.project{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    /* background-color: aqua; */
+}
+
+.calculator{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #000;
+    transition: .3s ease-in-out;
+}
+
+.calculator:hover{
+    filter: invert(1);
 }
 
 .menu-escondido{
@@ -103,6 +130,7 @@ body {
 .foto {
     width: 100px;
     height: 100px;
+    display: block;
     background-color: black;
     margin: auto;
     border-radius: 50%;
