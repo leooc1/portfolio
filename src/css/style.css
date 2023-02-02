@@ -11,7 +11,8 @@
 }
 
 body {
-    background-image: url('../image/ultimo.png');
+    background-image: url('../image/pexels-felix-mittermeier-956999.jpg');
+    background-size: cover;
     background-position: center center;
     width: 100vw;
     height: 100vh;
@@ -22,26 +23,34 @@ body {
 }
 
 .cartao {
-    background-image: linear-gradient(var(--dark-blue), var(--dark-blue), var(--dark-blue), var(--dark-blue), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray));
+    /* background-image: linear-gradient(var(--dark-blue), var(--dark-blue), var(--dark-blue), var(--dark-blue), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray)); */
+    /* background-color: var(--dark-blue); */
+    background-image: linear-gradient(to left,var(--dark-blue),var(--dark-blue));
     width: 520px;
     margin-top: 20px;
     height: 580px;
     border-radius: 10px;
-    border: 2px solid var(--black);
+    border: 1px solid cyan;
     position: relative;
+    box-shadow: inset 0px -50px var(--dark-gray);
 }
 
 .projetos{
     position: absolute;
-    top: -2px;
-    left: -2px;
+    top: -1px;
+    left: -1px;
     width: 520px;
     height: 580px;
     border-radius: 10px;
-    background-color: rgb(133, 133, 133);
+    background-color: rgb(77, 77, 77);
     padding: 20px 40px;
     display: none;
     overflow-y: scroll;
+}
+
+.projetos::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, transparent, cyan, cyan, cyan, cyan, transparent);
 }
 
 .project{
@@ -69,12 +78,31 @@ body {
     filter: invert(1);
 }
 
+.title{
+    font-family: var(--fonte-pixel);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 2px 2px 1px #000;
+}
+
+.descricion{
+    font-family: var(--fonte-normal);
+    font-size: 15pt;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px #000;
+}
+
 .menu-escondido{
     position: absolute;
     width: 0px;
     height: 0px;
-    top: -2px;
-    right: -2px;
+    top: -1px;
+    right: -1px;
+    border: 1.5px solid ;
     border-radius: 10px;
     background-color: transparent;
     backdrop-filter: blur(15px);
@@ -155,6 +183,7 @@ body {
     display: flex;
     background-color: var(--black);
     height: 45px;
+    box-shadow: 0px 45px 0px var(--dark-gray);
 }
 
 .sobre,
@@ -199,6 +228,7 @@ span{
 
 .redes-sociais {
     display: none;
+    background-color: var(--dark-gray);
     height: calc(100% - 184px - 45px - 20px);
     padding: 0px 20px;
     margin: 10px 0px 10px 0px;

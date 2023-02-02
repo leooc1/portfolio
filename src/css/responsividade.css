@@ -1,0 +1,23 @@
+@media (max-width: 524px){
+    #corpo{
+        background-color: aqua;
+    }
+
+    .cartao{
+        width: 100vw;
+        height: 100vh;
+        margin-top: 0px;
+        border-radius: 0px;
+        /* background-color: aqua; */
+    }
+
+    .menu-escondido{
+        border-radius: 0px;
+    }
+
+    .projetos{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+    }
+}

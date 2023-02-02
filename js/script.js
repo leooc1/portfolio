@@ -26,9 +26,11 @@ function menu(sanduiche){
     }
     else{
         sanduiche.style.transform = 'rotate(-90deg)'
-        menu.style.width = '520px'
-        menu.style.height = '580px'
-        
+        /////////////////////////////////////
+            menu.style.width = '520px'
+            menu.style.height = '580px'
+        /////////////////////////////////////
+            
         document.querySelector('.esc-home').style.fontSize = '18pt'
         setTimeout(()=>{
             document.querySelector('.esc-home').style.padding = '10px'
@@ -75,9 +77,12 @@ function tradeButton(button){
 function home(){
     document.querySelector('.projetos').style.display = 'none'
     document.querySelector('.menu-sanduiche').src = '../src/image/menu-line (1).svg'
+    let menuSanduiche = document.querySelector('.menu-sanduiche')
+    menu(menuSanduiche);
 }
 
 function projetos(){
     document.querySelector('.projetos').style.display = 'block'
-    // document.querySelector('.menu-sanduiche').src = '../src/image/menu-line.svg'
+    let menuSanduiche = document.querySelector('.menu-sanduiche')
+    menu(menuSanduiche);
 }
