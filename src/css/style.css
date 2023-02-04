@@ -18,19 +18,19 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     overflow-x: hidden;
 }
 
 .cartao {
     background-image: linear-gradient(to left,var(--dark-blue),var(--dark-blue));
     width: 520px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     height: 580px;
     border-radius: 10px;
     border: 1px solid cyan;
     position: relative;
-    box-shadow: inset 0px -50px var(--dark-gray);
+    box-shadow: inset 0px -200px var(--dark-gray);
 }
 
 .projetos{
@@ -105,6 +105,7 @@ body {
     border-radius: 10px;
     background-color: transparent;
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,6 +162,7 @@ body {
     background-color: black;
     margin: auto;
     border-radius: 50%;
+    border: 2px solid cyan;
 }
 
 .name {

@@ -1,5 +1,4 @@
 function menu(sanduiche){
-    let card = document.querySelector('main')
     let menu = document.querySelector('.menu-escondido')
     if(sanduiche.style.transform == 'rotate(-90deg)'){
         sanduiche.style.transform = 'rotate(0deg)'
@@ -27,9 +26,9 @@ function menu(sanduiche){
     }
     else{
         sanduiche.style.transform = 'rotate(-90deg)'
+            
             menu.style.width = '100%'
             menu.style.height = '100%'
-        /////////////////////////////////////
             
         document.querySelector('.esc-home').style.fontSize = '18pt'
         setTimeout(()=>{
