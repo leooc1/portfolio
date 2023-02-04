@@ -1,11 +1,18 @@
 @media (max-width: 524px){
     #corpo{
+        width: 100%;
+        height: 100%;
         background-color: aqua;
     }
 
+    .sobre-mim,.redes-sociais{
+        width: 100%;
+        height: calc(100vh - 216px - 45px - 20px - 10px);
+    }
+
     .cartao{
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         margin-top: 0px;
         border-radius: 0px;
         /* background-color: aqua; */

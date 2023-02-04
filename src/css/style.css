@@ -23,8 +23,6 @@ body {
 }
 
 .cartao {
-    /* background-image: linear-gradient(var(--dark-blue), var(--dark-blue), var(--dark-blue), var(--dark-blue), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray), var(--dark-gray)); */
-    /* background-color: var(--dark-blue); */
     background-image: linear-gradient(to left,var(--dark-blue),var(--dark-blue));
     width: 520px;
     margin-top: 20px;
@@ -46,6 +44,7 @@ body {
     padding: 20px 40px;
     display: none;
     overflow-y: scroll;
+    border: 1px solid #000;
 }
 
 .projetos::-webkit-scrollbar-thumb{
@@ -100,8 +99,8 @@ body {
     position: absolute;
     width: 0px;
     height: 0px;
-    top: -1px;
-    right: -1px;
+    top: 0px;
+    right: 0px;
     border: 1.5px solid ;
     border-radius: 10px;
     background-color: transparent;
