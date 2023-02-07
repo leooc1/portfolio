@@ -7,18 +7,18 @@ function menu(sanduiche){
 
         document.querySelector('.esc-home').style.fontSize = '0'
         setTimeout(()=>{
+            document.querySelector('.esc-home').style.display = 'none'
             document.querySelector('.esc-home').style.width = '0'
             document.querySelector('.esc-home').style.padding = '0'
-            document.querySelector('.logo-home').src = ''
-        },100) 
+        },300) 
         document.querySelector('.esc-home').style.transition = '.3s'
 
         document.querySelector('.esc-proj').style.fontSize = '0'
         setTimeout(()=>{
+            document.querySelector('.esc-proj').style.display = 'none'
             document.querySelector('.esc-proj').style.width = '0'
             document.querySelector('.esc-proj').style.padding = '0'
-            document.querySelector('.logo-projetos').src = ''
-        },100) 
+        },300) 
         document.querySelector('.esc-proj').style.transition = '.3s'
 
         sanduiche.style.transition = '1s'
@@ -32,18 +32,18 @@ function menu(sanduiche){
             
         document.querySelector('.esc-home').style.fontSize = '18pt'
         setTimeout(()=>{
+            document.querySelector('.esc-home').style.display = 'block'
             document.querySelector('.esc-home').style.padding = '10px'
             document.querySelector('.esc-home').style.width = '190px'
-            document.querySelector('.logo-home').src = '../src/image/home-2-line.svg'
-        },100)
+        },200)
         document.querySelector('.esc-home').style.transition = 'width 1s, font-size 1s, background-color .3s'
 
         document.querySelector('.esc-proj').style.fontSize = '18pt'
         setTimeout(()=>{
+            document.querySelector('.esc-proj').style.display = 'block'
             document.querySelector('.esc-proj').style.width = '190px'
             document.querySelector('.esc-proj').style.padding = '10px'
-            document.querySelector('.logo-projetos').src = '../src/image/folder-user-line.svg'
-        },100)
+        },200)
         document.querySelector('.esc-proj').style.transition = 'width 1s, font-size 1s, background-color .3s'
 
         sanduiche.style.transition = '1s'
