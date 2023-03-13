@@ -27,7 +27,7 @@ body {
 }
 
 .cartao {
-    background-image: linear-gradient(to left,var(--dark-blue),var(--dark-blue));
+    background-image: linear-gradient(to left, var(--dark-blue), var(--dark-blue));
     width: 520px;
     /* margin-top: 20px; */
     height: 580px;
@@ -37,7 +37,7 @@ body {
     box-shadow: inset 0px -200px var(--dark-gray);
 }
 
-.projetos{
+.projetos {
     position: absolute;
     top: -1px;
     left: -1px;
@@ -51,12 +51,12 @@ body {
     border: 1px solid #000;
 }
 
-.projetos::-webkit-scrollbar-thumb{
+.projetos::-webkit-scrollbar-thumb {
     background-color: transparent;
     background-image: linear-gradient(to bottom, transparent, cyan, cyan, cyan, cyan, transparent);
 }
 
-.project{
+.project {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@ body {
     /* background-color: aqua; */
 }
 
-.calculator{
+.calculator {
     width: 120px;
     height: 120px;
     display: flex;
@@ -77,11 +77,11 @@ body {
     transition: .3s ease-in-out;
 }
 
-.calculator:hover{
+.calculator:hover {
     filter: invert(1);
 }
 
-.title{
+.title {
     font-family: var(--fonte-pixel);
     text-align: center;
     font-size: 3rem;
@@ -90,7 +90,7 @@ body {
     text-shadow: 2px 2px 1px #000;
 }
 
-.descricion{
+.descricion {
     font-family: var(--fonte-normal);
     font-size: 15pt;
     text-align: center;
@@ -99,13 +99,13 @@ body {
     text-shadow: 1px 1px 1px #000;
 }
 
-.menu-escondido{
+.menu-escondido {
     position: absolute;
     width: 0px;
     height: 0px;
     top: 0px;
     right: 0px;
-    border: 1.5px solid ;
+    border: 1.5px solid;
     border-radius: 10px;
     background-color: transparent;
     backdrop-filter: blur(15px);
@@ -116,7 +116,7 @@ body {
     align-items: center;
 }
 
-.esc-home{
+.esc-home {
     display: flex;
     font-size: 0;
     font-family: var(--fonte-normal);
@@ -128,7 +128,7 @@ body {
     display: none;
 }
 
-.esc-proj{
+.esc-proj {
     display: flex;
     font-size: 0;
     font-family: var(--fonte-normal);
@@ -140,16 +140,18 @@ body {
     display: none;
 }
 
-.esc-home:hover,.esc-proj:hover{
+.esc-home:hover,
+.esc-proj:hover {
     background-color: rgb(194, 243, 255);
     cursor: pointer;
 }
 
-.logo-projetos,.logo-home{
+.logo-projetos,
+.logo-home {
     padding-right: 20px;
 }
 
-.menu-sanduiche{
+.menu-sanduiche {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -204,7 +206,7 @@ body {
     border: 1px solid var(--details);
 }
 
-.bttn-ativo{
+.bttn-ativo {
     background-color: var(--dark-gray);
     border-bottom: 0px;
 }
@@ -230,7 +232,7 @@ body {
     text-align: justify;
 }
 
-span{
+span {
     color: var(--details);
 }
 
@@ -245,7 +247,7 @@ span{
     align-items: center;
 }
 
-.minhas-redes{
+.minhas-redes {
     font-size: 20pt;
     font-weight: 500;
     font-family: var(--fonte-normal);
@@ -253,7 +255,7 @@ span{
     margin: 20px;
 }
 
-.linkedin{
+.linkedin {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -268,12 +270,12 @@ span{
     margin: 10px;
 }
 
-.linkedin:hover{
+.linkedin:hover {
     transition: .4s;
     background-color: rgb(0, 51, 145);
 }
 
-.github{
+.github {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -288,12 +290,12 @@ span{
     margin: 10px;
 }
 
-.github:hover{
+.github:hover {
     transition: .4s;
     background-color: rgb(0, 0, 0);
 }
 
-.email{
+.email {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -308,9 +310,9 @@ span{
     margin: 10px;
 }
 
-.email:hover{
+.email:hover {
     transition: .4s;
-    background-color: rgb(155, 14, 14);    
+    background-color: rgb(155, 14, 14);
 }
 
 ::-webkit-scrollbar {
